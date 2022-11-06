@@ -1,24 +1,15 @@
 
 import java.time.*;
+import java.time.format.DateTimeFormatter;
+
 
 public class Test2 {
     public static void main(String[] args) {
 
+        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("EEEE, dd MMMM yyyy, HH:mm:ss");
+        String text = dtf.format( LocalDateTime.now() );
+        System.out.println(text);
 
-//        LocalDateTime current = LocalDateTime.now();
-//        System.out.println("Сейчас = " + current);
-//
-//        System.out.println(current.getYear());
-//        System.out.println(current.getMonth());
-//        System.out.println(current.getDayOfMonth());
-//        System.out.println(current.getDayOfWeek());
-//
-//        System.out.println(current.getHour());
-//        System.out.println(current.getMinute());
-//        System.out.println(current.getSecond());
-
-        ZonedDateTime time = ZonedDateTime.now();
-        System.out.println(time);
 
 
     }
