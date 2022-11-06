@@ -1,5 +1,8 @@
 import java.util.ArrayList;
 
+/* 1. Записать все ходы и их общее количество в файл
+2. Должны быть записаны последние три игры с указанием даты и времени игры
+*/
 public class DotComBust {
 
     private GameHelper helper = new GameHelper();
