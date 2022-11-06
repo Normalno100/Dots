@@ -1,12 +1,25 @@
-import java.text.SimpleDateFormat;
-import java.util.Date;
+
+import java.time.*;
 
 public class Test2 {
     public static void main(String[] args) {
 
-        Date current = new Date(105, 5, 4, 12, 15, 0);
-        SimpleDateFormat formatter = new SimpleDateFormat("MMM-dd-YYYY");
-        String message = formatter.format(current);
-        System.out.println(message);
+
+//        LocalDateTime current = LocalDateTime.now();
+//        System.out.println("Сейчас = " + current);
+//
+//        System.out.println(current.getYear());
+//        System.out.println(current.getMonth());
+//        System.out.println(current.getDayOfMonth());
+//        System.out.println(current.getDayOfWeek());
+//
+//        System.out.println(current.getHour());
+//        System.out.println(current.getMinute());
+//        System.out.println(current.getSecond());
+
+        ZonedDateTime time = ZonedDateTime.now();
+        System.out.println(time);
+
+
     }
 }
